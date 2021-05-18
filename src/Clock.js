@@ -1,6 +1,7 @@
 import Strip from "./Strip";
 
 function Clock({ time, format }) {
+  // split a double digit number to two single digits
   const toSingleDigit = (doubleDigit) => {
     const tens = Math.trunc(doubleDigit / 10);
     const ones = doubleDigit % 10;
@@ -8,8 +9,10 @@ function Clock({ time, format }) {
   };
 
   let hours = time.getHours();
+  // if hours >= 12, it is PM else AM
   const ampm = hours >= 12 ? 1 : 0;
 
+  // modify the hours for standard clock format
   if (format === "STANDARD") {
     if (hours >= 12) hours -= 12;
     if (hours === 0) hours = 12;
