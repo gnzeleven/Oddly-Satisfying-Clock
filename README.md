@@ -1,71 +1,41 @@
-# Getting Started with Create React App
+## Oddly Satisfying Clock
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A rather unconventional clock inspired by [this reddit post](https://www.reddit.com/r/oddlysatisfying/comments/lsa654/this_clock_hitting_midnight_is_oddly_satisfying/). This Single Page Web Application was built using the javascript framework, react.js. [Here](https://oddly-satisfying-clock.web.app/) is the link for the firebase web app.
 
-## Available Scripts
+### Demo
 
-In the project directory, you can run:
+[ PRETEND SCREEN SHOT IS HERE ]
 
-### `npm start`
+[ PRETEND OTHER SCREEN SHOT IS HERE ]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Installation and Setup Instructions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
-### `npm test`
+Installation:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm install`
 
-### `npm run build`
+To Run Test Suite:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm test`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To Start Server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm start`
 
-### `npm run eject`
+To Visit App:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`localhost:3000/`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Some Reflections
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+I did this project during the early days of my summer vacation in 2021, partly because I was bored and partly because I wanted to do something - something useful. I did this project to take the basic concepts I knew about react.js home and to implement some new features by refering to the documentation. Plus, it would look good on my portfolio, wouldn't it?
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+I saw the reddit post I mentioned earlier and wanted to replicate it. But, I didn't know where to start. After some days, thanks to the [front page of react](https://www.reddit.com/r/reactjs/), I saw couple of projects that implemented this idea. With them as guidance, I was able to complete this and I was also able to implement some additional features. I started this using the `create-react-app` boilerplate, then adding some components.
 
-## Learn More
+One of the main challenges I ran into was implementing the AM/PM toggle. With some thinking, the help of react.js documentation, material-ui documentation, and react-icons documentation and thanks to the usual suspect - stackoverflow, I was able to do this without much of a trouble. I also hosted this app in the cloud platform Firebase.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"Oddly Satisfying Clock" 
+[GNU General Public License v3.0](https://github.com/gnzeleven/Oddly-Satisfying-Clock/blob/main/LICENSE)
