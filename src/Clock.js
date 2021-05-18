@@ -1,27 +1,37 @@
 import Strip from "./Strip";
 
-function Clock({ time }) {
+function Clock({ time, format }) {
   const toSingleDigit = (doubleDigit) => {
     const tens = Math.trunc(doubleDigit / 10);
     const ones = doubleDigit % 10;
     return [tens, ones];
   };
 
-  const hh = toSingleDigit(time.getHours());
+  let hours = time.getHours();
+  const ampm = hours >= 12 ? 1 : 0;
+
+  if (format === "STANDARD") {
+    if (hours >= 12) hours -= 12;
+    if (hours === 0) hours = 12;
+  }
+
+  const hh = toSingleDigit(hours);
   const mm = toSingleDigit(time.getMinutes());
   const ss = toSingleDigit(time.getSeconds());
 
-  //console.log(hTens, hOnes, mTens, mOnes, sTens, sOnes);
   return (
     <div className="App">
-      <Strip units={2} value={hh[0]} />
-      <Strip units={9} value={hh[1]} />
+      <p className="space" />
+      <Strip units={format === "MILITARY" ? 3 : 2} value={hh[0]} flag={false} />
+      <Strip units={10} value={hh[1]} flag={false} />
       <span className="colon">:</span>
-      <Strip units={5} value={mm[0]} />
-      <Strip units={9} value={mm[1]} />
+      <Strip units={6} value={mm[0]} flag={false} />
+      <Strip units={10} value={mm[1]} flag={false} />
       <span className="colon">:</span>
-      <Strip units={5} value={ss[0]} />
-      <Strip units={9} value={ss[1]} />
+      <Strip units={6} value={ss[0]} flag={false} />
+      <Strip units={10} value={ss[1]} flag={false} />
+      <p className="space" />
+      {format === "STANDARD" && <Strip units={2} value={ampm} flag={true} />}
     </div>
   );
 }

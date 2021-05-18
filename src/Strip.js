@@ -1,10 +1,17 @@
-const Strip = ({ units, value }) => {
+const ampmMap = {
+  0: "AM",
+  1: "PM",
+};
+
+const Strip = ({ units, value, flag }) => {
   return (
     <div className="strip" data-id={value} style={{ top: `${-30 * value}px` }}>
-      {Array(units + 1)
+      {Array(units)
         .fill("")
         .map((_, i) => (
-          <div className={`number${value === i ? " active" : ""}`}>{i}</div>
+          <div key={i} className={`number${value === i ? " active" : ""}`}>
+            {flag === false ? i : ampmMap[i]}
+          </div>
         ))}
     </div>
   );
