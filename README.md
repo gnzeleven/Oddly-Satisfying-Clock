@@ -4,9 +4,7 @@ A rather unconventional clock inspired by [this reddit post](https://www.reddit.
 
 ### Demo
 
-[ PRETEND SCREEN SHOT IS HERE ]
-
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
+[ PRETEND THE GIF IS HERE ]
 
 ### Installation and Setup Instructions
 
