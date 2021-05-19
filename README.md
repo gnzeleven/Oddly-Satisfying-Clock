@@ -4,7 +4,8 @@ A rather unconventional clock inspired by [this reddit post](https://www.reddit.
 
 ### Demo
 
-[ PRETEND THE GIF IS HERE ]
+![Demo](images/demo_clock.gif)
+_That oddly satisfying moment when the clock hits 12 midnight xD_
 
 ### Installation and Setup Instructions
 
